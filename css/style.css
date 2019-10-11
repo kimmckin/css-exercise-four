@@ -5,55 +5,52 @@
 body {
   background-color: #dadada;
   font-size: 1em;
+	font-family: Helvetica;
 }
 
 .container {
-  font-family: Helvetica;
-  margin: 0 auto;
-  width: 100%;
-}
-
-.container h1 {
-  text-align: center;
-  font-size: 1.2em;
-  margin:0 auto;
   width: 100%;
 }
 
 div {
-  height: 350px;
-  width: 200px;
+	float: left;
+  width: 100%;
   padding: 10px;
-  margin: 10px;
+  margin: 1% 0;
+	height: 260px;
 }
 
-.preview {
-  padding: 10px;
-  border-radius: 10px;
-  background-size: contain;
-  background-position: center;
-  display: inline-block;
-  align-content: center space-between;
-
-}
 
 @media screen and (min-width: 575px){
-   .preview{
-    margin: 1%;
-    width: 48%;
-  }
+	div {
+ margin: 1%;
+ width: 48%;
+}
 }
 
 @media screen and (min-width: 991px){
-   .preview {
-    margin: 1%;
-    width: 21%;
-  }
+	div {
+ margin: .5%;
+ width: 20%;
+}
+}
+h1 {
+  text-align: center;
+  font-size: 2em;
+  margin:0 auto;
+  width: 100%;
+	font-weight: normal;
+	text-transform: uppercase;
 }
 
 .preview h1 {
+	width: 100%;
+	margin: 0 auto 25px 0;
+	height: 220px;
   font-size: 2em;
   font-weight: bold;
+	background-size: cover;
+
 }
 .preview.baku {
   background-image: url("../images/baku.jpg");
