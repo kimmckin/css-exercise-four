@@ -1,73 +1,76 @@
-*, *:before, *after {
+*, *:before, *:after {
 	box-sizing: border-box;
 }
 
 body {
-  background-color: #dadada;
-  font-size: 1em;
+  	background-color: #dadada;
+  	font-size: 1em;
 	font-family: Helvetica;
 }
 
 .container {
-  width: 100%;
+ 	 width: auto;
 }
 
 div {
 	float: left;
-  width: 100%;
-  padding: 10px;
-  margin: 1% 0;
+  	width: 100%;
+  	padding: 10px;
+  	margin: 1% 0;
 	height: 260px;
 }
 
-
+/* code added to create two-column design */
 @media screen and (min-width: 575px){
-	div {
- margin: 1%;
- width: 48%;
+.preview {
+ 		margin: 1%;
+ 		width: 48%;
+		}
 }
-}
-
+/* code added to create four-column design */
 @media screen and (min-width: 991px){
-	div {
- margin: .5%;
- width: 20%;
-}
+.preview {
+ 		margin: .5%;
+ 		width: 20%;
+		}
 }
 h1 {
-  text-align: center;
-  font-size: 2em;
-  margin:0 auto;
-  width: 100%;
+  	text-align: center;
+  	font-size: 2em;
+  	margin: 0 auto;
 	font-weight: normal;
 	text-transform: uppercase;
 }
 
-.preview h1 {
+h2 {
 	width: 100%;
 	margin: 0 auto 25px 0;
-	height: 220px;
-  font-size: 2em;
-  font-weight: bold;
+	text-align: left;
+  	font-size: 2em;
+  	font-weight: bold;
 	background-size: cover;
 
 }
 .preview.baku {
-  background-image: url("../images/baku.jpg");
-  background-size: cover;
+  	background-image: url("../images/baku.jpg");
+	background-size: cover;
+  	background-repeat: no-repeat;
 }
 
 .preview.london {
-  background-image: url("../images/london.png");
-  background-size: cover;
+  	background-image: url("../images/london.png");
+	background-size: cover;
+  	background-repeat: no-repeat;
 }
 
 .preview.madrid {
-  background-image: url("../images/madrid.jpg");
-  background-size: cover;
+ 	 background-image: url("../images/madrid.jpg");
+	background-size: cover;
+  	background-repeat: no-repeat;
 }
 
 .preview.rome {
-  background-image: url("../images/rome.jpg");
-  background-size: cover;
+  	background-image: url("../images/rome.jpg");
+	background-size: cover;
+  	background-repeat: no-repeat;
 }
